@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">loom — School Accessories for Little Learners</title>
+  <desc id="desc">Responsive logo with a pencil, loom wordmark, backpack and yellow accent marks.</desc>
+
+  <style>
+    :root {
+      --loom-main: #064E3B;
+      --loom-yellow: #F6C344;
+      --loom-accent: #FBBF24;
+    }
+
+    .main { fill: var(--loom-main); }
+    .yellow { fill: var(--loom-yellow); }
+    .accent { fill: var(--loom-accent); }
+    .outline { stroke: var(--loom-main); }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --loom-main: #F7F4E9;
+        --loom-yellow: #F6C344;
+        --loom-accent: #FBBF24;
+      }
+    }
+
+    text {
+      font-family: "Nunito", "Poppins", "Arial Rounded MT Bold", Arial, sans-serif;
+    }
+  </style>
+
+  <!-- Pencil -->
+  <g transform="translate(72 55)">
+    <rect x="0" y="42" width="74" height="190" rx="22" class="main"/>
+    <rect x="17" y="64" width="40" height="145" rx="5" class="yellow"/>
+    <rect x="17" y="64" width="9" height="145" rx="4" fill="#FFE08A"/>
+    <path d="M0 42 L37 0 L74 42 Z" class="yellow"/>
+    <path d="M23 16 L37 0 L51 16 L45 35 L29 35 Z" class="main"/>
+    <path d="M0 232 L74 232 L37 279 Z" class="main"/>
+    <path d="M22 232 L52 232 L37 255 Z" class="yellow"/>
+    <rect x="0" y="205" width="74" height="27" rx="8" class="main"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="180" y="246" class="main"
+        font-size="190" font-weight="900"
+        letter-spacing="-14">loom</text>
+
+  <!-- Backpack integrated at the end of the wordmark -->
+  <g transform="translate(930 91)">
+    <rect x="0" y="48" width="105" height="139" rx="34" class="yellow outline" stroke-width="10"/>
+    <path d="M28 58 V38 C28 3 77 3 77 38 V58"
+          fill="none" class="outline" stroke-width="10" stroke-linecap="round"/>
+    <path d="M14 102 Q52 82 91 102 L91 155 Q52 170 14 155 Z"
+          fill="none" class="outline" stroke-width="8"/>
+    <circle cx="34" cy="128" r="6" class="main"/>
+    <path d="M34 128 H76" class="outline" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- Playful yellow spark -->
+  <g class="accent">
+    <rect x="1047" y="48" width="15" height="58" rx="8" transform="rotate(18 1054 77)"/>
+    <rect x="1082" y="61" width="15" height="61" rx="8" transform="rotate(43 1089 91)"/>
+    <rect x="1110" y="101" width="15" height="54" rx="8" transform="rotate(74 1117 128)"/>
+  </g>
+
+  <!-- Tagline -->
+  <text x="600" y="320" text-anchor="middle" class="main"
+        font-size="29" font-weight="700"
+        letter-spacing="2.2">SCHOOL ACCESSORIES FOR LITTLE LEARNERS</text>
+</svg>
